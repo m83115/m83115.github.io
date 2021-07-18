@@ -2134,7 +2134,7 @@ input, select, textarea {
 			}
 
 		.image.avatar {
-			border-radius: 100%;
+			border-radius: 10%;
 		}
 
 			.image.avatar:before {
@@ -2142,7 +2142,7 @@ input, select, textarea {
 			}
 
 			.image.avatar img {
-				border-radius: 100%;
+				border-radius: 10%;
 				width: 100%;
 			}
 
@@ -2640,7 +2640,13 @@ input, select, textarea {
 
 		#header .image.avatar {
 			margin: 0 0 1em 0;
-			width: 6.25em;
+			width: 200px;
+		}
+		#header a{
+			font-size: 20px;
+			color: rgba(255, 255, 255, 0.5);
+			line-height: 1.75em;
+			
 		}
 
 /* Footer */
