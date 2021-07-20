@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+
+    <!-- 今日練習:手機切換到桌機 -->
+
+    <style>
+
+        .item{
+            margin: 10px;
+            border: 1px solid #888;
+            padding: 10px;
+        }
+        .item img{
+            width: 100%;
+        }
+        @media screen and (min-width: 1200px){
+            .item{
+                display: flex;   
+            }
+            .item .pic{
+                width: 50%;
+            }
+            .item .txt{
+                width: 50%;
+                box-sizing: border-box;
+                padding-left: 20px;
+            }
+            .wrap .item:nth-child(even){
+                flex-direction: row-reverse;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="item">
+            <div class="pic">
+                <img src="https://picsum.photos/id/684/300/200" alt="">
+            </div>
+            <div class="txt">
+                <h1>title</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci ratione pariatur rerum maiores sed temporibus id magni iure illo nihil iusto modi, praesentium, doloribus, velit facilis deleniti veniam minus optio!</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="pic">
+                <img src="https://picsum.photos/id/684/300/200" alt="">
+            </div>
+            <div class="txt">
+                <h1>title</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci ratione pariatur rerum maiores sed temporibus id magni iure illo nihil iusto modi, praesentium, doloribus, velit facilis deleniti veniam minus optio!</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="pic">
+                <img src="https://picsum.photos/id/684/300/200" alt="">
+            </div>
+            <div class="txt">
+                <h1>title</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci ratione pariatur rerum maiores sed temporibus id magni iure illo nihil iusto modi, praesentium, doloribus, velit facilis deleniti veniam minus optio!</p>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
